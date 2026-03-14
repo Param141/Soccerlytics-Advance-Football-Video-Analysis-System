@@ -4,6 +4,7 @@ Soccerlytics-Advanced-Football-Video-Analysis-System
 DESCRIPTION: Soccerlytics is an comprehensive football video analysis system that tracks and analyzes matches. It generates enhanced visualizations with player tracking, ball possession statistics, team assignments, and a unique 2D top-down view for tactical analysis.
 
 🌟 Key Features
+
 *🔎 Player & Ball Tracking: Utilizes a state-of-the-art *YOLO model for high-accuracy detection of players, referees, and the ball. This is combined with the ByteTrack algorithm to assign unique IDs and track their movements seamlessly throughout the video.
 
 *🎨 Automatic Team Assignment: The system intelligently identifies team affiliations by analyzing player jersey colors. It uses *K-Means clustering on the pixel data from each player's torso to automatically group players into two distinct teams and color-code them.
@@ -19,6 +20,7 @@ DESCRIPTION: Soccerlytics is an comprehensive football video analysis system tha
 💾 Data Caching for Efficiency: Computationally intensive tasks like object tracking and camera movement estimation can be saved to pickle files (stubs). This allows for rapid re-analysis and debugging without needing to re-process the entire video from scratch.
 
 💻 Tech Stack
+
 Python
 OpenCV for video processing and computer vision tasks.
 Ultralytics YOLO for object detection.
@@ -26,7 +28,9 @@ Supervision for tracking and annotation utilities.
 NumPy & Pandas for numerical operations and data handling.
 Scikit-learn for K-Means clustering.
 Matplotlib for visualization.
+
 🚀 Getting Started
+
 Follow these instructions to get a copy of the project up and running on your local machine.
 
 Prerequisites
@@ -46,6 +50,8 @@ Set up project structure:
 Create a models/ directory and place your trained best.pt file inside it.(link:https://drive.google.com/file/d/1JUfzLSnaltjZu7muNqdduKVOIuAcKsgR/view)
 Create an invd/ directory and place your input video file (e.g., test1.mp4) inside it.
 Usage
+
+
 To run the analysis, simply execute the main script from the root directory:
 
 python main_final.py
